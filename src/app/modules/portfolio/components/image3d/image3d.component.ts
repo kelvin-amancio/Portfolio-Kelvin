@@ -16,7 +16,6 @@ export class Image3dComponent {
   }
 
   image3D() {
-    // Configurar a cena, a câmera e o renderizador
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -43,19 +42,5 @@ export class Image3dComponent {
       };
       animate();
     });
-
-    // const mesh = new THREE.Mesh(geometry, material);
-    // scene.add(mesh);
-
-    // const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    // renderer.setSize(width, height);
-    // renderer.setAnimationLoop(animate);
-    // document.getElementById('image3d')!.appendChild(renderer.domElement);
-
-    // function animate(time: any) {
-    //   mesh.rotation.x = time / 2000;
-    //   mesh.rotation.y = time / 1000;
-    //   renderer.render(scene, camera);
-    // }
   }
 }
