@@ -1,0 +1,10 @@
+:host {
+  $color-text-transp: #ffffffcc;
+  img {
+    height: 9rem;
+  }
+
+  a:hover {
+    color: $color-text-transp;
+  }
+}

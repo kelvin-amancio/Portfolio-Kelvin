@@ -1,0 +1,480 @@
+$primary: #1976d2;
+$background-header: rgba(30, 30, 32, 0.224);
+$background-CardCtt: rgba(71, 71, 78, 0.224);
+$background-Card: rgba(117, 117, 231, 0.224);
+$background-Card2: rgba(187, 187, 199, 0.062);
+$background-Email: rgba(187, 187, 201, 0.062);
+$text-menu: #fff;
+$text-body: #faf2f2;
+$text-content: #faf2f2;
+$text-Name: #2fe885;
+$text-h4: #3b3a3a;
+$text-span: #d8d8d8df;
+$text-h5: #000000;
+$font-size: 3.7rem;
+$font-sizeH3: 2rem;
+$color-icon: #faf2f2;
+$dp-center: center;
+$shadow-Card: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-CardHover: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$hover-color: #ffffffcc;
+$CardContent: rgba(30, 30, 32, 0.224);
+$spanMedia: 1.5rem;
+$cursor: pointer;
+
+header {
+  background-color: $background-header;
+  width: 100%;
+  margin: 0;
+
+  nav {
+    height: 1.3rem;
+  }
+}
+
+img {
+  height: 10rem;
+  cursor: pointer;
+}
+
+h3 {
+  color: $text-content;
+  font-size: $font-sizeH3;
+}
+
+h2 {
+  color: $text-Name;
+  font-size: $font-size;
+}
+
+span {
+  color: $text-span;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  gap: 32px;
+}
+
+li {
+  list-style-type: none;
+
+  .navText {
+    color: $text-body;
+    padding: 2rem;
+    cursor: $cursor;
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: $text-content;
+    text-decoration: none;
+    padding: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navText {
+  a {
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: $hover-color;
+  }
+}
+
+.flex {
+  margin-top: -3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.NavIcon {
+  display: flex;
+  align-items: start;
+}
+
+.NavLi {
+  display: flex;
+  flex-direction: row;
+  justify-content: $dp-center;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 5rem;
+}
+
+.container-principal {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-sec {
+  margin-top: -2rem;
+}
+
+.icons {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.icons {
+  ul:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  height: 1.5rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  background-color: $text-Name;
+  color: #ffffff;
+  clip-path: circle(40%);
+}
+
+.fsd {
+  display: inline;
+  color: $text-content;
+  font-size: $font-sizeH3;
+}
+
+.CardContent {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  row-gap: 1rem;
+}
+
+.CardContent2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.figure-Ctt {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-flex {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30rem;
+  height: 7rem;
+  background-color: $background-Card;
+  box-shadow: $shadow-Card;
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: 1.2rem;
+    color: $text-Name;
+  }
+}
+
+.card-flex2 {
+  width: 45rem;
+  height: 40rem;
+  background-color: $background-CardCtt;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    input {
+      width: 15rem;
+      padding: 1rem;
+      border-radius: 7px;
+      border: 0;
+      outline: 0;
+    }
+
+    textarea {
+      width: 15rem;
+      padding: 1rem;
+      border-radius: 7px;
+      border: 0;
+      outline: 0;
+      resize: vertical;
+    }
+  }
+}
+
+input:focus,
+input:active,
+textarea:active,
+textarea:focus {
+  box-shadow: rgba(250, 250, 250, 0.35) 0px 3px 15px;
+}
+
+.cardEmail {
+  background-color: $background-Email;
+  width: 30rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: $shadow-CardHover;
+}
+
+.ri-close-line {
+  display: none;
+}
+
+.ri-menu-line {
+  display: block;
+}
+
+.nav-contentt {
+  display: none;
+}
+
+.menu {
+  padding-right: 1rem;
+  color: $color-icon;
+  font-size: 1.5rem;
+  cursor: $cursor;
+  float: right;
+  display: none;
+}
+
+.FunctionsIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-linguagens {
+  margin-top: 1rem;
+}
+
+.container-principal {
+  height: 100vh;
+}
+
+.form-inf {
+  display: flex;
+}
+
+.borderEmail {
+  height: 1.5rem;
+  padding: 0.7rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.5rem;
+  background-color: $text-Name;
+  color: #ffffff;
+  clip-path: circle(40%);
+}
+
+.content-Email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#btnUp {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: -100px;
+  bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 10rem;
+  box-shadow: rgba(250, 250, 250, 0.35) 0px 2px 13px;
+
+  i {
+    font-size: 2.5rem;
+  }
+}
+
+#img-center {
+  margin-top: -2rem;
+  animation: anim 1s linear infinite alternate;
+}
+
+#about {
+  background-color: $CardContent;
+}
+
+#MyFunctions {
+  position: relative;
+  top: 3px;
+}
+
+#back-to-top {
+  position: fixed;
+  width: 2rem;
+  height: 1rem;
+  background-color: red;
+  z-index: 1;
+  float: left;
+}
+
+#imgFunctions {
+  height: 2rem;
+  color: $text-Name;
+  float: right;
+}
+
+#btn-Send {
+  background-color: $text-Name;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 7px;
+  cursor: $cursor;
+}
+
+#btn-Send:hover {
+  transform: scale(1.1);
+}
+
+@keyframes anim {
+  0% {
+    position: relative;
+    top: 0;
+  }
+
+  100% {
+    position: relative;
+    top: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .container-principal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .NavLi {
+    width: 100%;
+  }
+
+  .CardContent {
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    #figure-p {
+      font-size: 1.1rem;
+    }
+
+    #figure-span {
+      font-size: 1.1rem;
+    }
+  }
+
+  .figure-Ctt {
+    margin-top: -5rem;
+  }
+
+  .CardContent2 {
+    background-color: $background-CardCtt;
+
+    .cardEmail {
+      display: none;
+    }
+
+    .card-flex2 {
+      width: 0;
+    }
+  }
+
+  .colorActive {
+    color: $hover-color;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+  .nav-content {
+    display: none;
+  }
+
+  .ri-menu-line:hover {
+    color: $text-Name;
+  }
+
+  .ri-close-line:hover {
+    color: $text-Name;
+  }
+
+  .nav-contentt {
+    display: none;
+    padding-bottom: 1rem;
+  }
+
+  .NavLi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    display: block;
+    text-align: end;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #img-center {
+    height: 20rem;
+    position: relative;
+    left: 30px;
+  }
+}

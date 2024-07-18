@@ -1,0 +1,102 @@
+@import "../node_modules/remixicon/fonts/remixicon.css";
+@import "../node_modules/tailwindcss/base.css";
+@import "../node_modules/tailwindcss/components.css";
+@import "../node_modules/tailwindcss/utilities.css";
+
+$font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+body {
+  background-color: #0c0c0c;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.pl-1 {
+  padding: 0 1rem;
+}
+
+.pl-2 {
+  padding: 0 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pt-05 {
+  margin-top: 0.5rem;
+}
+
+.pt-1 {
+  margin-top: 1rem;
+}
+
+.pt-2 {
+  margin-top: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}

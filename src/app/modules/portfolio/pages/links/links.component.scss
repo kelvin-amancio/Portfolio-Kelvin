@@ -1,0 +1,21 @@
+:host {
+  .flex {
+    position: relative;
+    top: -2rem;
+  }
+  img {
+    height: 13rem;
+    margin-top: -4.5rem;
+  }
+  .subcard {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 12px;
+    background-color: #202020;
+  }
+  #image3d {
+    background: transparent;
+  }
+}

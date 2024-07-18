@@ -1,0 +1,11 @@
+<app-nav @fadeInOut />
+<div class="blur-ball" [style.left.px]="mouseX" [style.top.px]="mouseY"></div>
+
+<div class="flex justify-content-around" id="home">
+    <app-header />
+    <app-about class="content" />
+</div>
+
+<app-work @fadeInOut id="work" />
+<app-contact @fadeInOut id="contact" />
+<app-footer @fadeInOut />

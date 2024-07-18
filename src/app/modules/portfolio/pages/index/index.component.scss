@@ -1,0 +1,47 @@
+:host {
+  .content {
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  .blur-ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 43, 235, 0.5);
+    border-radius: 50%;
+    filter: blur(200px);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 1;
+  }
+
+  .app-blur-ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .justify-content-start {
+      justify-content: center !important;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}
