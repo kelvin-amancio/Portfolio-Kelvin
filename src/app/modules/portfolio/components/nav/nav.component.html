@@ -8,9 +8,9 @@
                                         <img class="brightness-100" src="./assets/logo/logo-kelvin.png" alt="logo">
                                 </div>
                                 <div class="NavLi">
-                                        <li class="navText"><a href="#home">Início</a></li>
-                                        <li class="navText"><a href="#work">Serviços</a></li>
-                                        <li class="navText"><a href="#contact">Contato</a></li>
+                                        <li class="navText"><a (click)="scrollTo('home')">Início</a></li>
+                                        <li class="navText"><a (click)="scrollTo('work')">Serviços</a></li>
+                                        <li class="navText"><a (click)="scrollTo('contact')">Contato</a></li>
                                 </div>
                         </div>
                 </ul>
@@ -19,8 +19,8 @@
 
 <div class="nav-contentt">
         <li class="NavLi" id="menu">
-                <ul class="navText"><a href="#home">Home</a></ul>
-                <ul class="navText"><a href="#about">About</a></ul>
-                <ul class="navText"><a href="#contact">Contact</a></ul>
+                <ul class="navText"><a (click)="scrollTo('home')">Home</a></ul>
+                <ul class="navText"><a (click)="scrollTo('work')">About</a></ul>
+                <ul class="navText"><a (click)="scrollTo('contact')">Contact</a></ul>
         </li>
 </div>

@@ -1,10 +1,21 @@
 :host {
   $color-text-transp: #ffffffcc;
+
   img {
     height: 9rem;
   }
 
   a:hover {
     color: $color-text-transp;
+  }
+
+  @media only screen and (max-width: 760px) {
+    p {
+      margin-top: -3rem;
+    }
+
+    span {
+      margin-bottom: 0.5rem;
+    }
   }
 }

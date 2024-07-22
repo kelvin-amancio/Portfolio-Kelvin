@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './work.component.scss'
 })
 export class WorkComponent {
-
+ 
 }

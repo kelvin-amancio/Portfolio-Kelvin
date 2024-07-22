@@ -16,6 +16,7 @@ export const routes: Routes = [
     path: 'links',
     component: LinksComponent,
   },
+
   {
     path: '**',
     redirectTo: 'inicio',

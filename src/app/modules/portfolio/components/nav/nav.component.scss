@@ -7,7 +7,7 @@ $background-Email: rgba(187, 187, 201, 0.062);
 $text-menu: #fff;
 $text-body: #faf2f2;
 $text-content: #faf2f2;
-$text-Name: #2fe885;
+$text-Name: #ffffffcc;
 $text-h4: #3b3a3a;
 $text-span: #d8d8d8df;
 $text-h5: #000000;
@@ -74,6 +74,7 @@ li {
   }
 
   a {
+    cursor: pointer;
     color: $text-content;
     text-decoration: none;
     padding: 2rem;

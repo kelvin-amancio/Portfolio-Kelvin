@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-
   MenuHidden() {
     let menu = document.querySelector('.nav-contentt') as HTMLElement;
     let bar = document.getElementById('bar') as HTMLElement;
@@ -32,4 +31,12 @@ export class NavComponent {
       })
     });
   }
+
+  scrollTo(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
