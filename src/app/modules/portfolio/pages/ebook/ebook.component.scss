@@ -1,0 +1,34 @@
+:host {
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blur-ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 43, 235, 0.5);
+    border-radius: 50%;
+    filter: blur(200px);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 1;
+  }
+
+  .app-blur-ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}

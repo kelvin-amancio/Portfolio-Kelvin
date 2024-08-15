@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { IndexComponent } from './modules/portfolio/pages/index/index.component';
 import { LinksComponent } from './modules/portfolio/pages/links/links.component';
+import { EbookComponent } from './modules/portfolio/pages/ebook/ebook.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +16,10 @@ export const routes: Routes = [
   {
     path: 'links',
     component: LinksComponent,
+  },
+  {
+    path: 'ebook',
+    component: EbookComponent,
   },
 
   {
