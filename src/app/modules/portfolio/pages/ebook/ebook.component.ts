@@ -5,11 +5,14 @@ import { NgIf } from '@angular/common';
 import { HeaderEbookComponent } from "../../components/header-ebook/header-ebook.component";
 import { ContentEbookComponent } from "../../components/content-ebook/content-ebook.component";
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-ebook',
   standalone: true,
-  imports: [NavComponent, FormsModule, ReactiveFormsModule, NgIf, HeaderEbookComponent, ContentEbookComponent],
+  imports: [NavComponent, FormsModule, ReactiveFormsModule, NgIf, HeaderEbookComponent, ContentEbookComponent,
+    RouterLink
+  ],
   templateUrl: './ebook.component.html',
   styleUrl: './ebook.component.scss',
   animations: [

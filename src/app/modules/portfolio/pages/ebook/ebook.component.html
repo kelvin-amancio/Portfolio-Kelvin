@@ -1,5 +1,6 @@
 <div class="blur-ball" [style.left.px]="mouseX" [style.top.px]="mouseY"></div>
-<img @fadeInOut class="brightness-100 h-40 mx-8 logo" src="./assets/logo/logo-kelvin.png" alt="logo">
+<img [routerLink]="['/']" @fadeInOut class="brightness-100 h-40 mx-8 logo cursor-pointer"
+        src="./assets/logo/logo-kelvin.png" alt="logo">
 
 <app-header-ebook @fadeInOut />
 
