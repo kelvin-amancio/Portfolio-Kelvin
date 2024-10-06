@@ -1,0 +1,10 @@
+:host {
+  label::after {
+    content: "*";
+    color: red;
+    margin-left: 0.2rem;
+  }
+  section{
+    margin-top: 12rem;
+  }
+}

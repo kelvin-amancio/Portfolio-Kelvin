@@ -1,0 +1,10 @@
+:host {
+  .flex:hover {
+    transform: scale(1.05);
+  }
+    label::after{
+        content: '*';
+        color: red;
+        margin-left: 0.2rem;
+    }
+}

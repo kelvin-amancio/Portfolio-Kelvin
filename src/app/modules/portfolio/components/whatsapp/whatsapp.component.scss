@@ -1,0 +1,40 @@
+:host{
+    .whatsapp-content{
+        text-align: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: #292524;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        cursor: pointer;
+        box-shadow: 
+        0 0 5px #6366F1,
+        0 0 10px #6366F1,
+        0 0 30px #6366F1,
+        0 0 10px #6366F1,
+        0 0 10px #6366F1;
+        z-index: 999;
+        i{
+            font-size: 2.5rem;
+            color: #29A319;
+        }
+    }
+
+    @media only screen and (max-width: 760px) {
+        .whatsapp-content{
+            z-index: 999;
+            width: 2.9rem;
+            height: 2.8rem;
+            margin-right: 2rem;
+            i{
+                font-size: 1.8rem;
+                color: #29A319;
+            }
+        }
+    
+      }
+}

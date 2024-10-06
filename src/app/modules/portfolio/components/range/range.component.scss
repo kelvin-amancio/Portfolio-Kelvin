@@ -1,0 +1,42 @@
+:host{
+.marquee {
+    margin-top: 3.5rem;
+    width: 100%; 
+    overflow: hidden; 
+    background-color: hsl(239, 56%, 57%); 
+    padding: 10px 0; 
+    box-sizing: border-box;
+    box-shadow: 
+    0 0 5px #6366F1,
+    0 0 10px #6366F1,
+    0 0 20px #6366F1,
+    0 0 40px #6366F1,
+    0 0 10px #6366F1;
+  }
+  
+  .marquee-content {
+    display: flex; 
+    width: max-content; 
+    animation: scroll 10s linear infinite; 
+  }
+  
+  .marquee-content span {
+    flex: 0 0 auto; 
+    padding: 0 20px; 
+    font-size: 1.5rem;
+    color: #ffffff;
+    white-space: nowrap; 
+    font-weight: 600;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  
+}

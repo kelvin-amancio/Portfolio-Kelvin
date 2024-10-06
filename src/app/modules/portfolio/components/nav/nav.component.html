@@ -1,0 +1,30 @@
+<nav>
+        <div class="bar menu"><i class="ri-menu-line" id="bar" (click)="MenuHidden()"></i></div>
+        <div class="bar menu"><i class="ri-close-line" id="barclose" (click)="MenuHidden()"></i></div>
+        <div class="nav-content">
+                <ul id="menu">
+                        <div class="flex">
+                                <div class="NavIcon">
+                                        <img class="brightness-100" src="./assets/logo/logo-kelvin.png" alt="logo">
+                                </div>
+                                <div class="NavLi">
+                                        <li class="navText"><a (click)="scrollTo('home')">Início</a></li>
+                                        <li class="navText"><a (click)="scrollTo('work')">Serviços</a></li>
+                                        <li class="navText"><a (click)="scrollTo('service-delivery')">Soluções</a></li>
+                                        <li class="navText"><a (click)="scrollTo('about')">Sobre</a></li>
+                                        <li class="navText"><a (click)="scrollTo('contact')">Contato</a></li>
+                                </div>
+                        </div>
+                </ul>
+        </div>
+</nav>
+
+<div class="nav-contentt">
+        <ul class="NavLi" id="menu">
+                <li class="navText"><a (click)="scrollTo('home')">Início</a></li>
+                <li class="navText"><a (click)="scrollTo('work')">Serviços</a></li>
+                <li class="navText"><a (click)="scrollTo('service-delivery')">Soluções</a></li>
+                <li class="navText"><a (click)="scrollTo('about')">Sobre</a></li>
+                <li class="navText"><a (click)="scrollTo('contact')">Contato</a></li>
+        </ul>
+</div>

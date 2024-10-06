@@ -1,0 +1,19 @@
+<app-nav @fadeInOut />
+<div class="blur-ball" [style.left.px]="mouseX" [style.top.px]="mouseY"></div>
+
+<app-whatsapp/>
+
+<app-information/>
+
+<app-range/>
+
+<app-work @fadeInOut id="work" />
+<app-range/>
+<app-service-delivery @fadeInOut id="service-delivery" />
+<app-about-header id="about"/>
+<div @fadeInOut class="flex justify-content-around sm:ml-5" >
+    <app-header />
+    <app-about class="content" />
+</div>
+<app-contact @fadeInOut id="contact" />
+<app-footer @fadeInOut />
